@@ -17,6 +17,9 @@ const actions = {
             dispatch('user/fetchError', error)
         }
     },
+    signIn ({ dispatch }, usersData) {
+        
+    },
     userId () {
         const user = firebase.auth().currentUser
         return user ? user.uid: undefined
